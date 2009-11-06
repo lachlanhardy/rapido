@@ -1,0 +1,97 @@
+/****
+Rapido
+20091106
+
+TOC
+=Generic Rules
+  =Generic Text
+    =Links
+    =Headings
+    =Body Text
+    =Date, Times etc
+  =Generic Forms
+=Structure
+  =Header
+    =Nav
+  =Page
+    =Pieces
+  =Footer
+=JS
+=Designs
+  =AOTKD
+
+
+****/
+
+/* =Generic Rules */
+  /* =Generic Text */
+  blockquote {background: #fafafa; border: 1px solid #aaa; color: #444; margin: 1em; overflow: auto; padding: 0 1em 0 1em;}
+  
+  blockquote:before,
+  blockquote:after {color: #aaa; font-size: 1em;}
+  
+  blockquote:before {content: "start quote";}
+  blockquote:after {content: "end quote";}
+  
+    blockquote cite {display: block; float: right; margin: 0 0 1em 0; width: auto;}
+  
+  q {font-size: 1.1em;}
+    
+  /* =Links */
+  a:link {color: #000;}
+  a:visited {color: #111;}
+  a:hover, a:active, a:focus {color: #fff;}
+
+  /* =Headings */
+  h1, h2, h3, h4, h5, h6 {font-family: Arial, FreeSans, Helvetica, sans-serif; margin: 1em 0 0.5em 0;}
+  h1 {font-size: 1.8em;}
+  h2 {font-size: 1.6em;}
+  h3 {font-size: 1.5em;}
+  h4 {font-size: 1.4em;}
+  h5 {font-size: 1.3em;}
+  h6 {font-size: 1.2em;}
+
+  /* =Body Text */
+  #maincontent p,
+  #maincontent li,
+  #maincontent ol,
+  #maincontent ul {margin: 0 0 0.5em;}
+  #maincontent p {line-height: 1.5;}
+  #maincontent ul {}
+  	#maincontent ul li {font-size: 1.07em; list-style-position: inside; list-style-type: disc;}
+  #maincontent ol {}
+  	#maincontent ol li {font-size: 1.07em; list-style-position: inside; list-style-type: decimal;}
+    #maincontent ol ol,
+    #maincontent ol ul,
+    #maincontent ul ol,
+    #maincontent ul ul {margin: 0 0 0.5em 1em;}
+	
+  .amp {background: #0e0e0e; color: #666; font: italic 100 1.25em Baskerville, "Goudy Old Style", "Palatino", Georgia, "Book Antiqua", serif; position: relative; top: 2px;}
+
+  /* =Dates, Times etc */
+  .date {font: 1em/1.6 Georgia, serif;}
+
+/* =Structure */
+html,
+body {height: 100%;}
+
+body {background: #fff; color: #0e0e0e; font: 62.5%/1.3 Arial, FreeSans, Helvetica, sans-serif; margin: 0; padding: 0;}
+
+#wrapper {font-size: 1.6em; padding: 1em;}
+  
+    /* =Nav */
+    #nav {background: #0e0e0e; color: #fefefe; border-bottom: 2px solid #666; overflow: auto;}
+      #nav ul {margin: 0; padding: 0;}
+        #nav ul li {float: left; margin: 0 0 0 0.5em; width: auto;}
+        #nav ul li a,
+        #nav ul li span {display: block; font-size: 1.4em; padding: 0.3em 1em;}
+        #nav ul li span {}
+        #nav ul li a:link,
+        #nav ul li a:visited {background: #0e0e0e; color: #fefefe; text-decoration: none;}
+        #nav ul li a:hover,
+        #nav ul li a:active,
+        #nav ul li a:focus {background: #0e0e0e; color: #fefefe; text-decoration: underline;}
+  
+
+/* =JS */
+html.js {}

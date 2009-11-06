@@ -1,0 +1,16 @@
+<div id="nav">
+  <ul>
+    <li><a href="/">home</a></li>
+    <% @nav_items.each do |item| %>
+      <li>
+        <% if item == request.env['PATH_INFO'].split("/").last %>
+          <span><%= item %></span>
+        <% else %>
+          <a href="/<%= item %>/"><%= item %></a>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div> <!-- // #nav -->
+        
+        
