@@ -1,11 +1,11 @@
 require 'rubygems'
-require 'sinatra/base'
+require 'sinatra'
 require 'net/http'
 require 'pp' # only for dev work
 
 module Application
   
-  class App < Sinatra::Application
+  class App # < Sinatra::Application
     Dir.glob("lib/helpers/*").each do |helper|
       require "#{File.dirname(__FILE__)}/#{helper}"
     end
